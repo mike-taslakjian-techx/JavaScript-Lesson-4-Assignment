@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-text: rgb(44, 51, 69);
+    --secondary-text: rgb(87, 100, 126);
+    --dark-red: rgb(242, 58, 60);
+    --light-red: rgb(255, 237, 237);
+    --dark-blue: rgb(46, 105, 255);
+    --light-blue: rgb(241, 245, 255);
+    --table-color: rgb(195, 202, 216);
+    --green-color: rgb(24, 189, 91);
+}
+
+body {
+    background-color: var(--table-color);
+    font-family: Inter, sans-serif;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 2px;
+}
+
+h1 {
+    padding: 30px;
+    border-bottom: 1px solid var(--table-color);
+}
+
+fieldset {
+    border:  none;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+fieldset span {
+    color: var(--dark-red);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex: 1
+}
+
+.input-group input {
+    width: 100%;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+input {
+    height: 40px;
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    border:1px solid var(--table-color);
+    border-radius: 3px;
+}
+
+label {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+.flex-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+hr {
+    margin: 15px auto 25px;
+    border: 1px solid var(--table-color);
+    width: 91%;
+}
+
+select {
+    height: 40px;
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    border:1px solid var(--table-color);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
