@@ -118,3 +118,47 @@ textarea {
     color: var(--main-text);
     font-size: 1rem;
 }
+
+table {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+
+table th {
+    background-color: var(--table-color);
+    height: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+table tbody th {
+    padding: 0 45px 0 8px;
+}
+
+.row1 th {
+    border-radius: 5px 0 0 0;
+}
+
+.row2 th {
+    border-radius: 0 0 0 5px;
+}
+
+table thead th:first-of-type {
+    background-color: transparent;
+    border: none;
+}
+
+table thead th:nth-of-type(2) {
+ border-radius: 5px 0 0 0;
+}
+
+table thead th:last-of-type {
+ border-radius: 0 5px 0 0;
+}
+
+table input {
+    border-radius: unset;
+    width: 100%;
+    border: 1px solid var(--table-color);
+}
