@@ -67,7 +67,7 @@
                 <fieldset>
                     <legend>E-mail</legend>
                     <div class="input-group">
-                        <input type="email" id="email" placeholder="ex: email@yahoo.com" />
+                        <input type="email" id="email" name="email" placeholder="ex: email@yahoo.com" />
                         <label for="email">example@example.com</label>
                     </div>
                 </fieldset>
@@ -76,7 +76,7 @@
 
                 <fieldset>
                     <legend>How did you hear about us? <span>*</span></legend>
-                    <select required>
+                    <select required name="reference">
                         <option value="none">None</option>
                         <option value="newspaper">Newspaper</option>
                         <option value="internet">Internet</option>
@@ -87,26 +87,26 @@
 
                 <fieldset>
                     <legend>Feedback about us:</legend>
-                    <textarea rows="10"></textarea>
+                    <textarea rows="10" name="feedback"></textarea>
                 </fieldset>
 
                 <fieldset>
                     <legend>Suggestions if any for further improvement:</legend>
-                    <textarea rows="10"></textarea>
+                    <textarea rows="10" name="suggestions"></textarea>
                 </fieldset>
 
                 <fieldset class="checkbox-fieldset">
                     <legend>Will you be willing to recommend us?</legend>
                     <div class="checkbox-group">
-                        <input type="checkbox" id="yes-checkbox" />
+                        <input type="checkbox" id="yes-checkbox" name="recommendation" value="yes" />
                         <label for="yes-checkbox">Yes</label>
                     </div>
                     <div class="checkbox-group">
-                        <input type="checkbox" id="maybe-checkbox" />
+                        <input type="checkbox" id="maybe-checkbox" name="recommendation" value="maybe" />
                         <label for="maybe-checkbox">Maybe</label>
                     </div>
                     <div class="checkbox-group">
-                        <input type="checkbox" id="no-checkbox" />
+                        <input type="checkbox" id="no-checkbox" name="recommendation" value="no" />
                         <label for="no-checkbox">No</label>
                     </div>
                 </fieldset>
@@ -125,15 +125,15 @@
                         <tbody>
                             <tr class="row1">
                                 <th>1</th>
-                                <td><input type="text" /></td>
-                                <td><input type="text" /></td>
-                                <td><input type="text" /></td>
+                                <td><input type="text" name="" /></td>
+                                <td><input type="text" name="" /></td>
+                                <td><input type="text" name="" /></td>
                             </tr>
                             <tr class="row2">
                                 <th>2</th>
-                                <td><input type="text" /></td>
-                                <td><input type="text" /></td>
-                                <td><input type="text" /></td>
+                                <td><input type="text" name="" /></td>
+                                <td><input type="text" name="" /></td>
+                                <td><input type="text" name="" /></td>
                             </tr>
                         </tbody>
                     </table>
