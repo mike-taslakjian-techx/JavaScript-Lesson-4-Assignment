@@ -162,3 +162,18 @@ table input {
     width: 100%;
     border: 1px solid var(--table-color);
 }
+
+fieldset:last-of-type {
+    border-bottom: 1px solid var(--table-color);
+}
+
+button {
+    margin: 30px;
+    width: 130px;
+    height: 50px;
+    background-color: var(--green-color);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
