@@ -11,9 +11,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
+
+        <div class="modal">
+            <div class="message">
+                <i class="fa-regular fa-circle-check"></i>
+                <p class="success-text">Thank you!</p>
+                <p>Your submission has been received.</p>
+            </div>
+        </div>
         
         <main>
             <h1>Customer Details:</h1>
@@ -30,6 +39,11 @@
                             <input type="text" id="last-name" name="last-name" required />
                             <label for="last-name">Last Name</label>
                         </div>
+                    </div>
+                    <div class="error-message">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>This field is required
+                        </p>
                     </div>
                 </fieldset>
 
@@ -57,11 +71,21 @@
                         <input type="text" id="postal-zip-code" name="postal-zip-code" required />
                         <label for="postal-zip-code">Postal / Zip Code</label>
                     </div>
+                    <div class="error-message">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>This field is required
+                        </p>
+                    </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Phone Number <span>*</span></legend>
                     <input type="number" name="phone-number" placeholder="(000) 000-0000" required />
+                    <div class="error-message">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>This field is required
+                        </p>
+                    </div>
                 </fieldset>
 
                 <fieldset>
@@ -77,12 +101,29 @@
                 <fieldset>
                     <legend>How did you hear about us? <span>*</span></legend>
                     <select required name="reference">
-                        <option value="none">None</option>
+                        <option value="" disabled selected>None</option>
                         <option value="newspaper">Newspaper</option>
                         <option value="internet">Internet</option>
                         <option value="magazine">Magazine</option>
                         <option value="other">Other</option>
                     </select>
+                    <div class="error-message">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>This field is required
+                        </p>
+                    </div>
+                </fieldset>
+
+                <fieldset class="other">
+                    <legend>Other <span>*</span></legend>
+                    <div class="input-group">
+                        <input type="text" name="other" required />
+                    </div>
+                    <div class="error-message">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>This field is required
+                        </p>
+                    </div>
                 </fieldset>
 
                 <fieldset>
@@ -139,7 +180,7 @@
                     </table>
                 </fieldset>
 
-                <button>Submit</button>
+                <button id="submitBtn">Submit</button>
 
             </form>
 
