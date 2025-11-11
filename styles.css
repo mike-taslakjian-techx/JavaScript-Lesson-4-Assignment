@@ -24,7 +24,7 @@ main {
     background-color: rgb(255, 255, 255);
     width: 75%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 30px auto;
     box-shadow: 0 0 2px;
 }
 
@@ -97,4 +97,24 @@ select {
 textarea {
     width: 100%;
     resize: vertical;
+    padding: 3px 10px;
+    font-size: 1.1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.checkbox-fieldset input {
+    width: 15px;
+    height: 15px;
+}
+
+.checkbox-fieldset label {
+    color: var(--main-text);
+    font-size: 1rem;
 }

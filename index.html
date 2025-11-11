@@ -23,12 +23,12 @@
                     <legend>Full Name <span>*</span></legend>
                     <div class="flex-inputs">
                         <div class="input-group">
-                            <input type="text" id="firstName" name="firstName" required />
-                            <label for="firstName">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required />
+                            <label for="first-name">First Name</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" id="lastName" name="lastName" required />
-                            <label for="lastName">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required />
+                            <label for="last-name">Last Name</label>
                         </div>
                     </div>
                 </fieldset>
@@ -36,12 +36,12 @@
                 <fieldset>
                     <legend>Address <span>*</span></legend>
                     <div class="input-group">
-                        <input type="text" id="streetAddress" name="streetAddress" required />
-                        <label for="streetAddress">Street Address</label>
+                        <input type="text" id="street-address" name="street-address" required />
+                        <label for="street-address">Street Address</label>
                     </div>
                     <div class="input-group">
-                        <input type="text" id="streetAddress2" name="streetAddress2" required />
-                        <label for="streetAddress2">Street Address Line 2</label>
+                        <input type="text" id="street-address-2" name="street-address-2" required />
+                        <label for="street-address-2">Street Address Line 2</label>
                     </div>
                     <div class="flex-inputs">
                         <div class="input-group">
@@ -49,19 +49,19 @@
                             <label for="city">City</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" id="stateProvince" name="stateProvince" required />
-                            <label for="stateProvince">State / Province</label>
+                            <input type="text" id="state-province" name="state-province" required />
+                            <label for="state-province">State / Province</label>
                         </div>
                     </div>
                     <div class="input-group">
-                        <input type="text" id="postalZipCode" name="postalZipCode" required />
-                        <label for="postalZipCode">Postal / Zip Code</label>
+                        <input type="text" id="postal-zip-code" name="postal-zip-code" required />
+                        <label for="postal-zip-code">Postal / Zip Code</label>
                     </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Phone Number <span>*</span></legend>
-                    <input type="number" name="phoneNumber" placeholder="(000) 000-0000" required />
+                    <input type="number" name="phone-number" placeholder="(000) 000-0000" required />
                 </fieldset>
 
                 <fieldset>
@@ -88,6 +88,31 @@
                 <fieldset>
                     <legend>Feedback about us:</legend>
                     <textarea rows="10"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Suggestions if any for further improvement:</legend>
+                    <textarea rows="10"></textarea>
+                </fieldset>
+
+                <fieldset class="checkbox-fieldset">
+                    <legend>Will you be willing to recommend us?</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="yes-checkbox" />
+                        <label for="yes-checkbox">Yes</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="maybe-checkbox" />
+                        <label for="maybe-checkbox">Maybe</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="no-checkbox" />
+                        <label for="no-checkbox">No</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Please give reference to any two people whom you feel:</legend>
                 </fieldset>
             </form>
 
