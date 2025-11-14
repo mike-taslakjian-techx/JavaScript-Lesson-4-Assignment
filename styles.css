@@ -226,7 +226,7 @@ button {
 }
 
 .invalid input {
-    border: 1px solid var(--dark-red)
+    border: 1px solid var(--dark-red);
 }
 
 .error-message {

@@ -80,7 +80,7 @@
 
                 <fieldset>
                     <legend>Phone Number <span>*</span></legend>
-                    <input type="number" name="phone-number" placeholder="(000) 000-0000" required />
+                    <input type="tell" inputmode="numeric" name="phone-number" placeholder="(000) 000-0000" pattern="\(\d{3}\) \d{3}-\d{4}" required />
                     <div class="error-message">
                         <p>
                             <i class="fa-regular fa-circle-xmark"></i>This field is required
@@ -117,7 +117,7 @@
                 <fieldset class="other">
                     <legend>Other <span>*</span></legend>
                     <div class="input-group">
-                        <input type="text" name="other" required />
+                        <input type="text" name="other" />
                     </div>
                     <div class="error-message">
                         <p>

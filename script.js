@@ -10,8 +10,10 @@ const select = document.querySelector("select");
 select.addEventListener("input", () => {
     if (select.value === "other") {
         document.querySelector(".other").style.display = "block";
+        document.querySelector(".other").required = true;
     } else {
         document.querySelector(".other").style.display = "none";
+        document.querySelector(".other").required = false;
     }
 });
 
@@ -21,7 +23,7 @@ submitBtn.addEventListener("click", (e) => {
     let formIsValid = true;
 
     form.querySelectorAll("fieldset").forEach(fieldset => {
-        const inputs = fieldset.querySelectorAll("input, select");
+        const inputs = fieldset.querySelectorAll("input, select, textarea");
         const errorMessage = fieldset.querySelector(".error-message");
         
         let fieldsetIsValid = true;
@@ -49,7 +51,7 @@ submitBtn.addEventListener("click", (e) => {
         reset();
     } else {
         const firstInvalid = form.querySelector('input:invalid');
-        firstInvalid.focus();
+        firstInvalid.scrollIntoView({behavior: 'smooth', block: 'center'});
     }  
 });
 
@@ -62,7 +64,7 @@ window.addEventListener("click", (e) => {
 // Helper functions
 
 function createUser () {
-    const inputs = document.querySelectorAll("input:not(table input), select, textarea");
+    const inputs = Array.from(document.querySelectorAll("input, select, textarea")).filter(i => !i.closest('table'));
     const user = {};
 
     inputs.forEach(input => {
